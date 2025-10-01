@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.cdnfonts.com/css/amazon-ember");
+
+/* font-family: 'Amazon Ember', sans-serif;
+font-family: 'Amazon Ember Cd RC', sans-serif;
+font-family: 'Amazon Ember Display', sans-serif;
+font-family: 'Amazon Ember Duospace', sans-serif;
+font-family: 'Amazon Ember Mono', sans-serif;
+font-family: 'Amazon Ember V2', sans-serif; */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.favicon {
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  padding: 10px 15px;
+  color: white;
+  background-color: #141921;
+}
+
+.search-nav-ul {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.search-nav-ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.search-nav-li {
+  cursor: pointer;
+}
+.search-nav-ul li p {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.search-nav-ul li strong {
+  margin-top: 2px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.search-nav-logo {
+  margin: 1px 8px 0px 6px;
+  padding: 4px 0px;
+  width: 100px;
+}
+
+.search-nav-li.search-bar {
+  flex-grow: 1;
+}
+
+.search-bar-select {
+  width: 80px;
+  height: 37px;
+  background-color: #e6e6e6;
+  border-radius: 10% 0 0 10%;
+  color: #555555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-select p.select-title {
+  font-size: 11px;
+}
+
+.search-bar-select::after {
+  content: "\25bc";
+  color: #555555;
+  font-size: 8px;
+  margin-left: 2px;
+}
+
+.search-nav-li.search-bar input {
+  width: 100%;
+  height: 37px;
+  padding: 10px;
+  border: white;
+}
+
+.search-nav-li .search-bar-icon {
+  width: 45px;
+  height: 37px;
+  background-color: #febd69;
+  border-radius: 0 10% 10% 0;
+}
+
+.search-nav-li .search-bar-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.search-nav-li.search-bar input:focus {
+  border: 3px solid #febd69;
+}
+
+.search-nav-li.destination-country img {
+  margin-top: 9px;
+  width: 19px;
+  height: 19px;
+}
+
+.search-nav-li.language img {
+  height: 15px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.search-nav-li.dropdown::after {
+  content: "\25bc";
+  color: #a7acb2;
+  font-size: 10px;
+}
+
+.search-nav-li.cart img {
+  height: 40px;
+}
+
+/* secondary */
+
+.secondary-nav {
+  background-color: #232e3e;
+}
+
+.secondary-nav-ul {
+  display: flex;
+  width: 100%;
+}
+
+.nav-hidden-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.secondary-nav-li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 5px 8px;
+  font-size: 14px;
+}
+
+.secondary-nav-li.secondary-nav-li.todo-menu p {
+  font-weight: 800;
+  margin-left: 5px;
+}
+
+.secondary-nav-li.todo-menu img {
+  width: 17px;
+  height: 17px;
+}
+
+.secondary-nav-li.free-us-shipping {
+  margin-left: auto;
+  font-weight: 800;
+}
+
+/* Main Section */
+
+.main-section {
+  width: 1300px;
+  flex: 1;
+  background-color: rgb(227, 230, 230);
+  position: relative;
+}
+
+.main-section-background {
+  width: 100%;
+  z-index: -1;
+  mask-image: linear-gradient(
+    to bottom,
+    red 0%,
+    red 15%,
+    rgba(255, 0, 0, 0) 100%
+  );
+}
+
+.main-section::after,
+.main-section::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 50px;
+  top: 80px;
+  background-size: cover;
+  position: absolute;
+}
+
+.main-section::before {
+  background-image: url(https://img.icons8.com/?size=100&id=60ltBKFPWkDc&format=png&color=FFFFFF);
+}
+
+.main-section::after {
+  background-image: url(https://img.icons8.com/?size=100&id=bydn8wMoawny&format=png&color=FFFFFF);
+}

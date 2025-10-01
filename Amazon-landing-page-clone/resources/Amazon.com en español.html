@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Amazon.com en español</title>
+  <link rel="stylesheet" href="./Amazon.com en español_files/style.css"><link rel="icon" type="image/x-icon" href="http://127.0.0.1:5500/resources/favicon.jpg"></head>
+  <body>
+    <header>
+      <nav class="search-nav">
+        <img class="search-nav-logo" src="./Amazon.com en español_files/Amazon-Logo.png" alt="Amazon logo">
+        <ul class="search-nav-ul">
+          <li class="search-nav-li destination-country">
+            <img alt="navigation icon" src="./Amazon.com en español_files/saved_resource">
+            <p>Enviar a <strong>Colombia</strong></p>
+          </li>
+          <li class="search-nav-li search-bar">
+            <div class="search-bar-select">
+              <p class="select-title">Todos</p>
+            </div>
+            <input type="text" id="search-bar" placeholder="Buscar en Amazon">
+            <div class="search-bar-icon">
+              <img src="./Amazon.com en español_files/search-icon.png" alt="">
+            </div>
+          </li>
+          <li class="search-nav-li language dropdown">
+            <img alt="us flag icon" src="./Amazon.com en español_files/us-flag-icon.svg">
+            <p><strong>ES</strong></p>
+          </li>
+          <li class="search-nav-li user-account dropdown">
+            <p>Hola Usuario <strong>Cuentas y Listas</strong></p>
+          </li>
+          <li class="search-nav-li returns">
+            <p>Devoluciones<strong>y pedidos</strong></p>
+          </li>
+          <li class="search-nav-li cart">
+            <img src="./Amazon.com en español_files/cart-icon.png" alt="cart icon">
+            <p><strong>Carrito</strong></p>
+          </li>
+        </ul>
+      </nav>
+      <nav class="secondary-nav">
+        <ul class="secondary-nav-ul">
+          <div class="nav-hidden-container">
+            <li class="secondary-nav-li todo-menu">
+              <img src="./Amazon.com en español_files/saved_resource(1)" alt="Icono de menu">
+              <p>Todo</p>
+            </li>
+            <li class="secondary-nav-li">Prime</li>
+            <li class="secondary-nav-li">Zona de envío gratis</li>
+            <li class="secondary-nav-li">Ofertas anticipadas Prime</li>
+            <li class="secondary-nav-li">Prime Video</li>
+            <li class="secondary-nav-li">Comprar de Nuevo</li>
+            <li class="secondary-nav-li">Servicio al Cliente</li>
+            <li class="secondary-nav-li">Listas</li>
+            <li class="secondary-nav-li">Tarjetas de Regalo</li>
+            <li class="secondary-nav-li">Vender</li>
+          </div>
+          <li class="secondary-nav-li free-us-shipping">
+            Prime entrega gratis desde EE. UU.
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-section">
+      <img class="main-section-background" src="./Amazon.com en español_files/main-background.jpg" alt="main bkacground-image">
+    </main>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
